@@ -2,7 +2,7 @@ name: hello
 on: [workflow_dispatch, push]
 jobs:
   build:
-    environment: "staging environment"
+    environment: "integration environment"
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
