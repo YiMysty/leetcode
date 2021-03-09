@@ -1,0 +1,9 @@
+name: hello
+on: [workflow_dispatch, push]
+environment: staging_environment
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo Hello, world!
